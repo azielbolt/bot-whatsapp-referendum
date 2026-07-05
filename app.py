@@ -14,7 +14,7 @@ from fastapi.responses import PlainTextResponse, JSONResponse
 load_dotenv()
 
 APP_DIR = Path(__file__).resolve().parent
-QUESTIONS_PATH = APP_DIR / "data" / "questions.json"
+QUESTIONS_PATH = APP_DIR / "questions.json"
 
 WHATSAPP_TOKEN = os.getenv("WHATSAPP_TOKEN", "")
 PHONE_NUMBER_ID = os.getenv("PHONE_NUMBER_ID", "")
